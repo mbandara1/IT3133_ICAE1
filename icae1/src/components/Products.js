@@ -1,5 +1,8 @@
 
 import '../assets/CSS/layout.css';
+import Product from './Product';
+import Cart from './Cart';
+import { flowers } from './FlowerDb';
 
 
 export default function Products(){
