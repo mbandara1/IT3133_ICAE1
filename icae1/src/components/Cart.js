@@ -7,7 +7,7 @@ export default function Cart({cart}) {
         <div className="table-container">
             <h4 className="card-title">Cart</h4>
             <table>
-                <thead>
+                <tbody>
                     {
                 cart.map((item)=>(
                         <tr key={item.id}>
@@ -17,9 +17,15 @@ export default function Cart({cart}) {
                         </tr>
                     ))
                     }
-                </thead>
+                </tbody>
                 {
-                    
+                   <thead>
+
+                   <td>Product</td>
+                   <td>QTY</td>
+                   <td>Price</td>
+
+               </thead>  
                 }
                 <tr>
                     <td >Grand Total : </td>
