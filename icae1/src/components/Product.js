@@ -1,5 +1,5 @@
 import '../assets/CSS/layout.css';
-export default function Product((flower,AddToCart)){
+export default function Product({flower,onAddToCart}){
     
     return(
         <div className="grid-item">
