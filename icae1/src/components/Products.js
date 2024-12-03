@@ -4,6 +4,7 @@ import Product from './Product';
 import Cart from './Cart';
 import { flowers } from './FlowerDb';
 import {useState} from 'react'
+import { flowers } from './FlowerDB';
 
 
 export default function Products(){
