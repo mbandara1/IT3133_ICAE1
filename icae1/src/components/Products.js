@@ -3,9 +3,11 @@ import '../assets/CSS/layout.css';
 import Product from './Product';
 import Cart from './Cart';
 import { flowers } from './FlowerDb';
+import {useState} from 'react'
 
 
 export default function Products(){
+    const [cart,setCart]=useState([]);
    
     return(
         <>
