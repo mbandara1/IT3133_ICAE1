@@ -1,5 +1,5 @@
 import '../assets/CSS/layout.css';
-export default function Product((flower)){
+export default function Product((flower,AddToCart)){
     
     return(
         <div className="grid-item">
@@ -14,9 +14,10 @@ export default function Product((flower)){
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
                         
+                        
                         <input type="number" id="quantity" name="quantity" onChange={(e)=>(flower.qty=+e.target.value)} />
                     </div>
-                    <button class="card-button">Add to Cart</button>
+                    <button class="card-button" onClick={()=>AddToCart(flower)}>Add to Cart</button>
                 </div>
             </div>
         </div>
