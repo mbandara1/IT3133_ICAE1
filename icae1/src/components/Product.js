@@ -16,7 +16,7 @@ export default function Product({flower,onAddToCart}){
                         
                         <input type="number" id="quantity" name="quantity" onChange={(e)=>(flower.qty=+e.target.value)} />
                     </div>
-                    <button class="card-button" onClick={()=>AddToCart(flower)}>Add to Cart</button>
+                    <button class="card-button" onClick={()=>onAddToCart(flower)}>Add to Cart</button>
                 </div>
             </div>
         </div>
