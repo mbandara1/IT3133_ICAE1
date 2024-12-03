@@ -8,9 +8,8 @@ export default function Product((flower,AddToCart)){
                 
                 <img src={require(`../assets/image/${flower.img}`)} alt={flower.name} />
                 <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
-                    <h5 class="card-title">{flower.name}</h5>
-                    <p>Price: ${flower.price}</p>
+                <h5 class="card-title">{flower.name} Price: {flower.price}</h5>
+                    
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
                         
